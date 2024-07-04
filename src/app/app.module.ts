@@ -6,16 +6,21 @@ import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import {HTTP_INTERCEPTORS, HttpClient, HttpClientModule} from '@angular/common/http';
 import {RouterOutlet} from "@angular/router";
+import {HomeComponent} from "./pages/home/home.component";
+
+
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
     RouterOutlet,
     HttpClientModule,
     FormsModule,
+    HomeComponent,
+
   ],
   providers: [
     HttpClient,
