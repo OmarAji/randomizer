@@ -1,0 +1,26 @@
+<app-header></app-header>
+
+<section id="hero" class="hero d-flex align-items-center section-bg">
+  <div class="container">
+    <div class="row justify-content-between gy-5">
+      <div
+        class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+        <h2 data-aos="fade-up">Flip the COIN!<br>and test you luch :D</h2>
+        <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+        </div>
+      </div>
+      <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+        <img src="assets/img/coin2.gif" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+      </div>
+    </div>
+    <div class="coin-flipper">
+
+      <p>Wie oft soll die Münze geworfen werden?
+        <input type="number" id="flip-count" min="1" value="1" [(ngModel)]="flipCount">
+        <button class="btn-book-a-table" (click)="flipCoin()">Flip</button>
+      <p></p></div>
+    <div id="result"></div>
+    <div class="coin-images"></div>
+  </div>
+</section>
+<app-footer></app-footer>

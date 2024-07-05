@@ -1,20 +1,18 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
-import {HeaderComponent} from "../../components/header/header.component";
-import {CardsComponent} from "../../components/cards/cards.component";
-import {FooterComponent} from "../../components/footer/footer.component";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-home',
-  standalone: true,
-  imports: [
-    HeaderComponent,
-    CardsComponent,
-    FooterComponent
-  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent implements OnInit, AfterViewInit {
+
+  constructor(
+    private router: Router,
+  ) {
+  }
+
   ngOnInit(): void {
     this.checkCookie();
   }
