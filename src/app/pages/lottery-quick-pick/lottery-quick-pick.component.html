@@ -1,1 +1,25 @@
-<p>lottery-quick-pick works!</p>
+<app-header></app-header>
+
+<section id="hero" class="hero d-flex align-items-center section-bg">
+  <div class="container">
+    <div class="row justify-content-between gy-5">
+      <div
+        class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+        <h2 data-aos="fade-up">Roll the Dice!!<br>and test you luck :D</h2>
+        <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+
+
+        </div>
+
+      </div>
+      <div class="Lottery">
+        <h2>Lottery Quick Pick</h2>
+        <button (click)="getLotteryNumbers()">Get Lottery Numbers</button>
+        <div id="lotteryNumbers">
+          <div *ngFor="let number of lotteryNumbers" class="number-circle">{{ number }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>
