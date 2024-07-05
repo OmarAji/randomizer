@@ -11,6 +11,8 @@ import {HeaderComponent} from "./components/header/header.component";
 import {CoinFlipperComponent} from "./pages/coin-flipper/coin-flipper.component";
 import {FooterComponent} from "./components/footer/footer.component";
 import {CardsComponent} from "./components/cards/cards.component";
+import {DiceRollerComponent} from "./pages/dice-roller/dice-roller.component";
+import {LotteryQuickPickComponent} from "./pages/lottery-quick-pick/lottery-quick-pick.component";
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import {CardsComponent} from "./components/cards/cards.component";
     CoinFlipperComponent,
     HeaderComponent,
     FooterComponent,
-    CardsComponent
+    CardsComponent,
+    DiceRollerComponent,
+    LotteryQuickPickComponent
   ],
   imports: [
     BrowserModule,

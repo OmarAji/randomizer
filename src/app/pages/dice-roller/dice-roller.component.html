@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+<section id="hero" class="hero d-flex align-items-center section-bg">
+  <div class="container">
+    <div class="row justify-content-between gy-5">
+      <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+        <h2 data-aos="fade-up">Roll the Dice!!<br>and test you luck :D</h2>
+        <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+
+
+        </div>
+
+      </div>
+      <div class="dicetable">
+        <h2>Dice Roller</h2>
+        <div class="anzahl"><label  for="rollCount">Anzahl der Würfe:</label></div>
+        <input type="number" id="rollCount" value="1" [(ngModel)]="rollCount" min="1" max="10" >
+        <button id="throw" (click)="rollDice()">Würfeln</button>
+        <button (click)="resetDice()">Reset</button>
+        <div id="diceImages">
+          <img *ngFor="let diceImage of diceImages" [src]="diceImage" class="dice">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>
