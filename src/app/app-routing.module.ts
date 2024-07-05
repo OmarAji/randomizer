@@ -4,6 +4,7 @@ import {HomeComponent} from "./pages/home/home.component";
 import {CoinFlipperComponent} from "./pages/coin-flipper/coin-flipper.component";
 import {DiceRollerComponent} from "./pages/dice-roller/dice-roller.component";
 import {LotteryQuickPickComponent} from "./pages/lottery-quick-pick/lottery-quick-pick.component";
+import {ProjektvisionComponent} from "./pages/projektvision/projektvision.component";
 
 
 const routes: Routes = [
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'lottery-quick-pick',
     component: LotteryQuickPickComponent
+  },
+  {
+    path: 'projektvision',
+    component: ProjektvisionComponent
   }
 ];
 
