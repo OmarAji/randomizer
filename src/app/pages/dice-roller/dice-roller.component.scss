@@ -1,0 +1,48 @@
+.home-home {
+
+  height: 100vh;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Ändere die Farbe des Texts auf Weiß */
+body {
+  color: #fff;
+}
+
+/* Ändere die Farbe des Links auf Weiß */
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* Ändere die Farbe des Labels auf Weiß */
+label {
+  color: #fff;
+}
+
+/* Ändere die Farbe des H1-Titels auf Weiß */
+h1 {
+  color: #fff;
+}
+
+
+.dice {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+/* Stil für die Navbar anpassen */
+.navbar {
+  width: 100%;
+}
+
+/* Stil für den Container anpassen */
+.container {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}

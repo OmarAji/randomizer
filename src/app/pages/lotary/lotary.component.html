@@ -1,0 +1,29 @@
+<div class="lotary">
+
+  <app-header></app-header>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>Lottery Quick Pick</h1>
+
+        <!-- Eingabefeld für die Anzahl der Nummern pro Array -->
+        <label for="quantity">Number of Numbers in the Ticket:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" [(ngModel)]="quantity">
+
+        <!-- Eingabefeld für die Anzahl der Arrays -->
+        <label for="numberOfArrays">Number of Tickets:</label>
+        <input type="number" id="numberOfArrays" name="numberOfArrays" min="1" max="2" [(ngModel)]="numberOfArrays">
+
+        <div id="lotteryNumbers" class="d-flex flex-column align-items-center">
+          <div *ngFor="let array of arrays; let i = index" class="array-container d-flex flex-wrap justify-content-center">
+            <h5>Array {{i + 1}}:</h5>
+            <div *ngFor="let number of array" class="number-circle">{{number}}</div>
+          </div>
+        </div>
+        <button class="btn btn-primary mt-3" (click)="getLotteryNumbers()">Generate Numbers</button>
+      </div>
+    </div>
+  </div>
+
+
+</div>

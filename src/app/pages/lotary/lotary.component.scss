@@ -1,0 +1,52 @@
+/* Füge hier dein individuelles CSS hinzu, wenn nötig */
+.number-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+body {
+  /* ... existierende Eigenschaften ... */
+  color: white; /* Ändere die Textfarbe auf Weiß */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: white; /* Ändere die Textfarbe für die Navbar-Elemente auf Weiß */
+}
+
+.btn-secondary,
+.btn-primary {
+  color: white; /* Ändere die Textfarbe für die Buttons auf Weiß */
+}
+
+.lotary {
+  /* Füge das Hintergrundbild hinzu */
+  background-image: url('https://images.pexels.com/photos/4497038/pexels-photo-4497038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Passe den Pfad entsprechend an */
+  background-size: cover; /* Das Bild soll den gesamten Hintergrund abdecken */
+  height: 100vh; /* 100% of the viewport height */
+  background-repeat: no-repeat; /* Verhindere die Wiederholung des Hintergrundbildes */
+  color: white;
+}
+
+.array-container {
+  margin-bottom: 20px; /* Abstand zwischen den Arrays */
+}
+
+/* Stil für die Navbar anpassen */
+.navbar {
+  width: 100%;
+}
+
+/* Stil für den Container anpassen */
+.container {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}

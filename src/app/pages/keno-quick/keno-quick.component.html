@@ -1,0 +1,34 @@
+<div class="lotary">
+  <app-header></app-header>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>Keno Quick Pick</h1>
+
+        <!-- Eingabefeld für die Anzahl der Keno-Tickets -->
+        <label for="numberOfTickets">Number of Keno-Tickets (max 4):</label>
+        <input type="number" id="numberOfTickets" name="numberOfTickets" min="1" max="4" [(ngModel)]="numberOfTickets">
+
+        <!-- Eingabefeld für die Anzahl der Zahlen pro Ticket (maximal 4) -->
+        <label for="numbersPerTicket">Number of Ticket (max 4):</label>
+        <input type="number" id="numbersPerTicket" name="numbersPerTicket" min="1" max="4" [(ngModel)]="numbersPerTicket">
+
+        <!-- Eingabefeld für den maximalen Wert der Keno-Nummern -->
+        <label for="maxValue">Max value of Numbers (70, 80 oder 90):</label>
+        <select id="maxValue" name="maxValue" [(ngModel)]="maxValue">
+          <option value="70">70</option>
+          <option value="80">80</option>
+          <option value="90">90</option>
+        </select>
+
+        <div id="kenoNumbers" class="d-flex flex-column align-items-center">
+          <div *ngFor="let ticket of kenoTickets; let i = index" class="keno-ticket mb-3">
+            <h5>Keno Ticket {{i + 1}}:</h5>
+            <div *ngFor="let number of ticket" class="number-circle">{{number}}</div>
+          </div>
+        </div>
+        <button class="btn btn-primary mt-3" (click)="getKenoNumbers()">Generate Numbers</button>
+      </div>
+    </div>
+  </div>
+</div>

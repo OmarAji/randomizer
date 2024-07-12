@@ -1,0 +1,21 @@
+<div class="home-home" style="  background-image: url('https://images.pexels.com/photos/4497038/pexels-photo-4497038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); ">
+  <app-header></app-header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>Dice Roller</h1>
+
+        <!-- Eingabefeld für die Anzahl der Würfel -->
+        <label for="diceQuantity">Number of dice:</label>
+        <input type="number" id="diceQuantity" name="diceQuantity" min="1" [(ngModel)]="diceQuantity">
+
+        <!-- Würfel-Container -->
+        <div id="diceContainer"></div>
+
+        <!-- Button zum Würfeln -->
+        <button class="btn btn-primary mt-3" (click)="rollDice()">Roll Dice</button>
+      </div>
+    </div>
+  </div>
+</div>
+

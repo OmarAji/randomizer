@@ -1,0 +1,39 @@
+.home-home {
+  height: 100vh;
+  background-image: url('https://images.pexels.com/photos/4497038/pexels-photo-4497038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+label {
+  color: #fff;
+}
+
+h1 {
+  color: #fff;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Kreisförmiger Rand */
+  background-color: rgba(255, 255, 255, 0.2); /* Transparenter weißer Hintergrund */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}

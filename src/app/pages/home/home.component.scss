@@ -1,0 +1,11 @@
+.home-home {
+
+  background-size: cover; /* Damit das Bild den gesamten Bildschirm bedeckt */
+  background-position: center center; /* Zentriere das Bild */
+  background-attachment: fixed; /* Das Hintergrundbild bleibt fest, wenn du scrollst */
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

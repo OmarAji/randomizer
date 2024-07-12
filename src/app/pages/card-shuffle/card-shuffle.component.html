@@ -1,0 +1,21 @@
+<div class="home-home" style="background-image: url('https://images.pexels.com/photos/4497038/pexels-photo-4497038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+  <app-header></app-header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>Playing Cards</h1>
+
+        <label for="cardQuantity">Number of cards:</label>
+        <input type="number" id="cardQuantity" name="cardQuantity" min="1" [(ngModel)]="cardQuantity" value="1">
+
+        <div id="cardContainer">
+          <img *ngFor="let card of cards" [src]="card.image" alt="Card" class="card">
+        </div>
+
+        <button class="btn btn-primary mt-3" (click)="drawCards()">Draw Cards</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
